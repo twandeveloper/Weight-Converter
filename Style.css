@@ -1,0 +1,29 @@
+body{
+    background: #1d1e21;
+    color: #fff;
+
+}
+
+.title{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.convert{
+    max-width: 50%;
+}
+.kg{
+    background-color: #2e5add;
+    display: none;
+}
+
+.g{
+    background-color: #0adb06;
+    display: none;
+}
+
+.o {
+    background-color: #e50422;
+    display: none;
+}
