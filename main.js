@@ -1,5 +1,6 @@
 let calcKg = document.getElementById("kg");
 let calcG = document.getElementById("g");
+let calcO = document.getElementById("ounces");
 let weightInput = document.getElementById("weightInput");
 
 let kg = 0;
@@ -17,8 +18,10 @@ function CalculateToKg() {
 }
 
 function changeWeight() {
-    calcKg.innerHTML = "KiloGrams: " + kg.toFixed(4);
+    calcKg.innerHTML = "KiloGrams: " + kg.toFixed(2);
     calcG.innerHTML = "Grams: " + g.toFixed(2);
+    calcO.innerHTML = "Ounces: " + ounces.toFixed(2);
+
 }
 
 function check() {
@@ -53,4 +56,11 @@ function oChecked() {
     } else {
         document.getElementById("oBox").style.display = "none";
     }
+}
+
+function clearForm() {
+    calcKg.innerHTML = "Kg";
+    calcG.innerHTML = "g"
+    calcO.innerHTML = "Oz";
+    weightInput.value = "";
 }
