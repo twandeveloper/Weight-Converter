@@ -1,5 +1,5 @@
 let calcKg = document.getElementById("kg");
-let calcG = document.getElementById("g");
+let calcG = document.getElementById("gram");
 let calcO = document.getElementById("ounces");
 let weightInput = document.getElementById("weightInput");
 
@@ -9,7 +9,7 @@ let ounces = 0;
 
 
 
-function CalculateToKg() {
+function convertWeight() {
     let lbs = weightInput.value;
     kg = lbs / 2.205;
     g = kg * 1000;
@@ -24,7 +24,7 @@ function changeWeight() {
 
 }
 
-function check() {
+function kgCheck() {
     let kgChecked = document.getElementById("kgChecked");
     if (kgChecked.checked == true) {
         console.log("checked");
@@ -38,15 +38,18 @@ function check() {
  
 }
 
-function gChecked() {
-    let gChecked = document.getElementById("gChecked")
-    if (gChecked.checked == true) {
-        document.getElementById("gBox").style.display = "block";
+function gramsCheck() {
+    let gramsChecked =document.getElementById("gramsChecked");
+    if (gramsChecked.checked == true) {
+        document.getElementById("gramBox").style.display = "block";
         
     } else {
-        document.getElementById("gBox").style.display = "none";
+        document.getElementById("gramBox").style.display = "none";
+        
     }
+    
 }
+
 
 function oChecked() {
     let ouncesChecked = document.getElementById("ouncesChecked");
@@ -60,7 +63,15 @@ function oChecked() {
 
 function clearForm() {
     calcKg.innerHTML = "Kg";
-    calcG.innerHTML = "g"
-    calcO.innerHTML = "Oz";
     weightInput.value = "";
+    checkedFalse();
+    kgCheck();
+    gramsCheck();
+    oChecked();
+}
+
+function checkedFalse() {
+    kgChecked.checked = false;
+    gramsChecked.checked = false;
+    ouncesChecked.checked = false;    
 }
