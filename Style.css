@@ -18,7 +18,7 @@ hr{
 }
 
 .btn{
-    font-size: 3.5vw;
+    font-size: 1vw;
     color: #fff;
 }
 
@@ -36,22 +36,16 @@ hr{
 }
 
 .main-title {
-    font-size: 5vw;
+    font-size: 6.5vw;
 }
 
 
-
-.convert{
-    max-width: 70%;
-    min-width: 30%;
-}
-
-.jumbotron {
+.c {
     margin: 15px auto;
 }
 
 .jumbotron h1{
-    font-size: 7vw;
+    font-size: 2vw;
 }
 
 .kg{
