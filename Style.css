@@ -4,16 +4,29 @@ body{
 
 }
 
+button{
+    margin: 0 10px;
+}
+
+hr{
+    background: #fff;
+}
+
 .weightIn {
     line-height: 2vw;
     height: 40px;
 }
 
 .btn{
-    font-size: 1.6vw;
-    padding: 0px 6px;
+    font-size: 2.5vw;
     color: #fff;
 }
+
+.buttons{
+    max-width: 45%;
+    margin: 0 auto;
+}
+
 
 
 .title{
@@ -28,6 +41,10 @@ body{
 .convert{
     max-width: 70%;
     min-width: 30%;
+}
+
+.jumbotron {
+    margin: 15px auto;
 }
 
 .jumbotron h1{

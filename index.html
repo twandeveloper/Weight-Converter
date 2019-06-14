@@ -10,53 +10,67 @@
 </head>
 <body>
     <div class="container-fluid title">
-        <h1>Weight Converter</h1>
+        <div class="row">
+            <div class="col-lg-12">
+                    <h1>Weight Converter</h1>
+            </div>
+            <div class="col-lg-12">   
+                <div class="form-check form-check-inline">
+                    <input onclick="kgCheck()" class="form-check-input" type="checkbox" id="kgChecked">
+                    <label class="form-check-label" for="inlineCheckbox1">Kg</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input onclick="gramsCheck()" class="form-check-input" type="checkbox" id="gramsChecked">
+                    <label class="form-check-label" for="inlineCheckbox2">g</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input onclick="oChecked()" class="form-check-input" type="checkbox" id="ouncesChecked">
+                    <label class="form-check-label" for="inlineCheckbox3">Oz</label>
+                </div>
+            </div>
+        </div> 
         <hr>
-
-        <div class="form-check form-check-inline">
-            <input onclick="kgCheck()" class="form-check-input" type="checkbox" id="kgChecked">
-            <label class="form-check-label" for="inlineCheckbox1">Kg</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input onclick="gramsCheck()" class="form-check-input" type="checkbox" id="gramsChecked">
-            <label class="form-check-label" for="inlineCheckbox2">g</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input onclick="oChecked()" class="form-check-input" type="checkbox" id="ouncesChecked">
-            <label class="form-check-label" for="inlineCheckbox3">Oz</label>
-          </div>
-    </div>
-    <div class="container-fluid convert">
-
-        <div  class=" input input-group mb-3">
-            <input id="weightInput" type="text" class="weighIn form-control" placeholder="weight in lbs">
-            <div class="input-group-append">
-              <button onclick="convertWeight() " id="weight" class="btn btn-outline-secondary" type="button">Convert Lbs</button>
-              <button onclick="clearForm() " id="weight" class="btn btn-outline-secondary" type="button">Reset</button>
+        <div class="row justify-content-md-center">
+            <div class="col-lg-6 input input-group mb-3">
+                <input id="weightInput" type="text" class="weighIn form-control" placeholder="weight in lbs">
             </div>
         </div>
 
-        <div id="kgBox" class="jumbotron jumbotron-fluid kg">
-            <div class="container">
-                <h1 id="kg" class="display-4">Kg</h1>
-                <!-- <p id="test"class="lead"></p> -->
+        <div class="row justify-content-md-center">
+            <div class="input-group-append buttons">
+                <button onclick="convertWeight() " id="weight" class="btn btn-outline-secondary" type="button">Convert Lbs</button>
+                <button onclick="clearForm() " id="weight" class="btn btn-outline-secondary" type="button">Reset</button>
             </div>
         </div>
 
-        <div id="gramBox" class="jumbotron jumbotron-fluid g">
-            <div class="container">
-                <h1 id="gram" class="display-4">g</h1>  
-                <!-- <p id="test"class="lead"></p> -->
-            </div>
-        </div>
 
-        <div id="oBox" class="jumbotron jumbotron-fluid o">
-            <div class="container">
-                <h1 id="ounces" class="display-4">Oz</h1>
-                <!-- <p id="test"class="lead"></p> -->
+            <div class="row justify-content-md-center">
+                <div id="kgBox" class="col-lg-8 jumbotron jumbotron-fluid kg">
+                    <div class="container">
+                        <h1 id="kg" class="display-4">Kg</h1>
+                        <!-- <p id="test"class="lead"></p> -->
+                    </div>
+                </div>
             </div>
-        </div>
-
+            
+            
+            <div class="row justify-content-md-center">
+                <div id="gramBox" class="col-lg-8 jumbotron jumbotron-fluid g">
+                    <div class="container">
+                        <h1 id="gram" class="display-4">g</h1>  
+                        <!-- <p id="test"class="lead"></p> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-center">
+                <div id="oBox" class="col-lg-8 jumbotron jumbotron-fluid o">
+                    <div class="container">
+                        <h1 id="ounces" class="display-4">Oz</h1>
+                        <!-- <p id="test"class="lead"></p> -->
+                    </div>
+                </div>
+            </div>
 
     </div>
 </body>
