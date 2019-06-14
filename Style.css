@@ -18,13 +18,12 @@ hr{
 }
 
 .btn{
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     color: #fff;
 }
 
-.buttons{
-    max-width: 45%;
-    margin: 0 auto;
+.btn-group{
+    margin: 10px auto;
 }
 
 
